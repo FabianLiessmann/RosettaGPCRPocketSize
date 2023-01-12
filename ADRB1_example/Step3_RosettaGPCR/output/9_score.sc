@@ -1,0 +1,3 @@
+SEQUENCE: 
+SCORE: total_score Menv_smooth atom_pair_constraint cart_bonded dslf_ca_dih dslf_cs_ang dslf_ss_dih dslf_ss_dst      fa_atr      fa_dun fa_intra_rep     fa_mbenv fa_mbsolv   fa_pair    fa_rep hbond_bb_sc hbond_lr_bb    hbond_sc hbond_sr_bb       omega     p_aa_pp        rama         ref description 
+SCORE:   -1166.497     -63.052                0.000     394.895       0.314       0.176       0.215      -1.857   -1857.156     247.808        4.023       79.086   321.360   -18.258   256.302     -67.691     -18.454     -80.603    -317.501      27.606     -23.859     -31.523     -18.330 9_S_0001
