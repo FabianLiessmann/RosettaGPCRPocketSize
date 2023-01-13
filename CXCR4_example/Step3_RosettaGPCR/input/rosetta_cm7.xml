@@ -1,0 +1,45 @@
+<ROSETTASCRIPTS>
+    <TASKOPERATIONS>
+    </TASKOPERATIONS>
+    <SCOREFXNS>
+         <ScoreFunction name="stage1" weights="input/stage1_membrane.wts" symmetric="0">
+            <Reweight scoretype="atom_pair_constraint" weight="2"/>
+        </ScoreFunction>
+        <ScoreFunction name="stage2" weights="input/stage2_membrane.wts" symmetric="0">
+            <Reweight scoretype="atom_pair_constraint" weight="1"/>
+        </ScoreFunction>
+        <ScoreFunction name="fullatom" weights="input/stage3_rlx_membrane.wts" symmetric="0">
+            <Reweight scoretype="atom_pair_constraint" weight="1"/>
+        </ScoreFunction>
+        <ScoreFunction name="membrane" weights="membrane_highres_Menv_smooth" symmetric="0">
+            <Reweight scoretype="cart_bonded" weight="0.5"/>
+            <Reweight scoretype="pro_close" weight="0"/>
+            <Reweight scoretype="atom_pair_constraint" weight="1"/>
+	</ScoreFunction>
+    </SCOREFXNS>
+    <FILTERS>
+    </FILTERS>
+    <MOVERS>
+        <ConstraintSetMover name="cst" add_constraints="1" cst_file="input/CXCR4_7.cst" />
+        <Hybridize name="hybridize" stage1_scorefxn="stage1" stage2_scorefxn="stage2" fa_scorefxn="fullatom" batch="1" stage1_increase_cycles="1.0" stage2_increase_cycles="1.0" linmin_only="1" realign_domains="0" disulf_file="input/disulf.txt" add_hetatm="1" keep_pose_constraint="1">
+            <Template pdb="input/3odu__thread.pdb" cst_file="AUTO" weight="1.000" />
+            <Template pdb="input/4zud__thread.pdb" cst_file="AUTO" weight="1.000" />
+            <Template pdb="input/5lwe__thread.pdb" cst_file="AUTO" weight="1.000" />
+            <Template pdb="input/5t1a__thread.pdb" cst_file="AUTO" weight="1.000" />
+            <Template pdb="input/4mbs__thread.pdb" cst_file="AUTO" weight="1.000" />
+        </Hybridize>
+        <ClearConstraintsMover name="clearconstraints"/>
+        <FastRelax name="relax" scorefxn="membrane" repeats="1" dualspace="1" bondangle="1"/>
+    </MOVERS>
+    <APPLY_TO_POSE>
+    </APPLY_TO_POSE>
+    <PROTOCOLS>
+        <Add mover="cst"/>
+        <Add mover="hybridize"/>
+        <Add mover="clearconstraints"/>
+        <Add mover="cst"/>
+        <Add mover="relax"/>
+        <Add mover="clearconstraints"/>	
+    </PROTOCOLS>
+    <OUTPUT scorefxn="membrane"/>
+</ROSETTASCRIPTS>
