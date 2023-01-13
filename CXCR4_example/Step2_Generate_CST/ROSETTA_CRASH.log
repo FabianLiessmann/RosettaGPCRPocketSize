@@ -1,0 +1,420 @@
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: UNKNOWN APPLICATION
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "4.8.5 20150623 (Red Hat 4.8.5-39)"
+[STDLIB]: libstdc++ version 20150623
+[START_OPTIONS]
+NO OPTIONS SPECIFIED
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(backtrace_string(int)+0x3a) [0x7f49f835b1aa]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::string const&)+0x51) [0x7f49f310f521]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load_options_from_file_exception(std::string const&, std::string const&)+0x346) [0x7f49f305ef16]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(std::string, std::list<std::string, std::allocator<std::string> >&, bool)+0x210) [0x7f49f305f270]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(int, char* const*, bool)+0x13e) [0x7f49f305fd1e]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init_options(int, char**)+0x1f) [0x7f49f839f56f]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init(int, char**)+0x29) [0x7f49f83a2bb9]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x401c2a]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x7f49f0e63555]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x402074]
+
+[END_BACKTRACE]
+
+[FILE]: src/utility/options/OptionCollection.cc
+[LINE]: 536
+[START_MESSAGE]
+Option file open failed for: 'input/flags.options'
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: UNKNOWN APPLICATION
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "4.8.5 20150623 (Red Hat 4.8.5-39)"
+[STDLIB]: libstdc++ version 20150623
+[START_OPTIONS]
+NO OPTIONS SPECIFIED
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(backtrace_string(int)+0x3a) [0x7fb7c23de1aa]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::string const&)+0x51) [0x7fb7bd192521]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load_options_from_file_exception(std::string const&, std::string const&)+0x346) [0x7fb7bd0e1f16]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(std::string, std::list<std::string, std::allocator<std::string> >&, bool)+0x210) [0x7fb7bd0e2270]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(int, char* const*, bool)+0x13e) [0x7fb7bd0e2d1e]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init_options(int, char**)+0x1f) [0x7fb7c242256f]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init(int, char**)+0x29) [0x7fb7c2425bb9]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x401c2a]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x7fb7baee6555]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x402074]
+
+[END_BACKTRACE]
+
+[FILE]: src/utility/options/OptionCollection.cc
+[LINE]: 536
+[START_MESSAGE]
+Option file open failed for: 'input/flags.options'
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: UNKNOWN APPLICATION
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "4.8.5 20150623 (Red Hat 4.8.5-39)"
+[STDLIB]: libstdc++ version 20150623
+[START_OPTIONS]
+NO OPTIONS SPECIFIED
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(backtrace_string(int)+0x3a) [0x7f60fb5641aa]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::string const&)+0x51) [0x7f60f6318521]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load_options_from_file_exception(std::string const&, std::string const&)+0x346) [0x7f60f6267f16]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(std::string, std::list<std::string, std::allocator<std::string> >&, bool)+0x210) [0x7f60f6268270]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(int, char* const*, bool)+0x13e) [0x7f60f6268d1e]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init_options(int, char**)+0x1f) [0x7f60fb5a856f]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init(int, char**)+0x29) [0x7f60fb5abbb9]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x401c2a]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x7f60f406c555]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x402074]
+
+[END_BACKTRACE]
+
+[FILE]: src/utility/options/OptionCollection.cc
+[LINE]: 536
+[START_MESSAGE]
+Option file open failed for: 'input/flags.options'
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: UNKNOWN APPLICATION
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "4.8.5 20150623 (Red Hat 4.8.5-39)"
+[STDLIB]: libstdc++ version 20150623
+[START_OPTIONS]
+NO OPTIONS SPECIFIED
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(backtrace_string(int)+0x3a) [0x7fc572b311aa]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::string const&)+0x51) [0x7fc56d8e5521]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load_options_from_file_exception(std::string const&, std::string const&)+0x346) [0x7fc56d834f16]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(std::string, std::list<std::string, std::allocator<std::string> >&, bool)+0x210) [0x7fc56d835270]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(int, char* const*, bool)+0x13e) [0x7fc56d835d1e]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init_options(int, char**)+0x1f) [0x7fc572b7556f]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init(int, char**)+0x29) [0x7fc572b78bb9]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x401c2a]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x7fc56b639555]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x402074]
+
+[END_BACKTRACE]
+
+[FILE]: src/utility/options/OptionCollection.cc
+[LINE]: 536
+[START_MESSAGE]
+Option file open failed for: 'input/flags.options'
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: UNKNOWN APPLICATION
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "4.8.5 20150623 (Red Hat 4.8.5-39)"
+[STDLIB]: libstdc++ version 20150623
+[START_OPTIONS]
+NO OPTIONS SPECIFIED
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(backtrace_string(int)+0x3a) [0x7f86ec03c1aa]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::string const&)+0x51) [0x7f86e6df0521]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load_options_from_file_exception(std::string const&, std::string const&)+0x346) [0x7f86e6d3ff16]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(std::string, std::list<std::string, std::allocator<std::string> >&, bool)+0x210) [0x7f86e6d40270]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(int, char* const*, bool)+0x13e) [0x7f86e6d40d1e]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init_options(int, char**)+0x1f) [0x7f86ec08056f]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init(int, char**)+0x29) [0x7f86ec083bb9]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x401c2a]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x7f86e4b44555]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x402074]
+
+[END_BACKTRACE]
+
+[FILE]: src/utility/options/OptionCollection.cc
+[LINE]: 536
+[START_MESSAGE]
+Option file open failed for: 'input/flags.options'
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: UNKNOWN APPLICATION
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "4.8.5 20150623 (Red Hat 4.8.5-39)"
+[STDLIB]: libstdc++ version 20150623
+[START_OPTIONS]
+NO OPTIONS SPECIFIED
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(backtrace_string(int)+0x3a) [0x7fde45b151aa]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::string const&)+0x51) [0x7fde408c9521]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load_options_from_file_exception(std::string const&, std::string const&)+0x346) [0x7fde40818f16]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(std::string, std::list<std::string, std::allocator<std::string> >&, bool)+0x210) [0x7fde40819270]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(int, char* const*, bool)+0x13e) [0x7fde40819d1e]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init_options(int, char**)+0x1f) [0x7fde45b5956f]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init(int, char**)+0x29) [0x7fde45b5cbb9]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x401c2a]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x7fde3e61d555]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x402074]
+
+[END_BACKTRACE]
+
+[FILE]: src/utility/options/OptionCollection.cc
+[LINE]: 536
+[START_MESSAGE]
+Option file open failed for: 'input/flags.options'
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: UNKNOWN APPLICATION
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "4.8.5 20150623 (Red Hat 4.8.5-39)"
+[STDLIB]: libstdc++ version 20150623
+[START_OPTIONS]
+NO OPTIONS SPECIFIED
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(backtrace_string(int)+0x3a) [0x7fb1e5de21aa]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::string const&)+0x51) [0x7fb1e0b96521]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load_options_from_file_exception(std::string const&, std::string const&)+0x346) [0x7fb1e0ae5f16]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(std::string, std::list<std::string, std::allocator<std::string> >&, bool)+0x210) [0x7fb1e0ae6270]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(int, char* const*, bool)+0x13e) [0x7fb1e0ae6d1e]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init_options(int, char**)+0x1f) [0x7fb1e5e2656f]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init(int, char**)+0x29) [0x7fb1e5e29bb9]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x401c2a]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x7fb1de8ea555]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x402074]
+
+[END_BACKTRACE]
+
+[FILE]: src/utility/options/OptionCollection.cc
+[LINE]: 536
+[START_MESSAGE]
+Option file open failed for: 'input/flags.options'
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: UNKNOWN APPLICATION
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "4.8.5 20150623 (Red Hat 4.8.5-39)"
+[STDLIB]: libstdc++ version 20150623
+[START_OPTIONS]
+NO OPTIONS SPECIFIED
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(backtrace_string(int)+0x3a) [0x7f8d3a22e1aa]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::string const&)+0x51) [0x7f8d34fe2521]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load_options_from_file_exception(std::string const&, std::string const&)+0x346) [0x7f8d34f31f16]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(std::string, std::list<std::string, std::allocator<std::string> >&, bool)+0x210) [0x7f8d34f32270]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(int, char* const*, bool)+0x13e) [0x7f8d34f32d1e]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init_options(int, char**)+0x1f) [0x7f8d3a27256f]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init(int, char**)+0x29) [0x7f8d3a275bb9]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x401c2a]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x7f8d32d36555]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x402074]
+
+[END_BACKTRACE]
+
+[FILE]: src/utility/options/OptionCollection.cc
+[LINE]: 536
+[START_MESSAGE]
+Option file open failed for: 'input/flags.options'
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: UNKNOWN APPLICATION
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "4.8.5 20150623 (Red Hat 4.8.5-39)"
+[STDLIB]: libstdc++ version 20150623
+[START_OPTIONS]
+NO OPTIONS SPECIFIED
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(backtrace_string(int)+0x3a) [0x7f436b1b11aa]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::string const&)+0x51) [0x7f4365f65521]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load_options_from_file_exception(std::string const&, std::string const&)+0x346) [0x7f4365eb4f16]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(std::string, std::list<std::string, std::allocator<std::string> >&, bool)+0x210) [0x7f4365eb5270]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(int, char* const*, bool)+0x13e) [0x7f4365eb5d1e]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init_options(int, char**)+0x1f) [0x7f436b1f556f]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init(int, char**)+0x29) [0x7f436b1f8bb9]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x401c2a]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x7f4363cb9555]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x402074]
+
+[END_BACKTRACE]
+
+[FILE]: src/utility/options/OptionCollection.cc
+[LINE]: 536
+[START_MESSAGE]
+Option file open failed for: 'input/flags.options'
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: UNKNOWN APPLICATION
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "4.8.5 20150623 (Red Hat 4.8.5-39)"
+[STDLIB]: libstdc++ version 20150623
+[START_OPTIONS]
+NO OPTIONS SPECIFIED
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(backtrace_string(int)+0x3a) [0x7f694111f1aa]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::string const&)+0x51) [0x7f693bed3521]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load_options_from_file_exception(std::string const&, std::string const&)+0x346) [0x7f693be22f16]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(std::string, std::list<std::string, std::allocator<std::string> >&, bool)+0x210) [0x7f693be23270]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libutility.so(utility::options::OptionCollection::load(int, char* const*, bool)+0x13e) [0x7f693be23d1e]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init_options(int, char**)+0x1f) [0x7f694116356f]
+/home/iwe2/Rosetta/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/default/libcore.6.so(core::init::init(int, char**)+0x29) [0x7f6941166bb9]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x401c2a]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x7f6939c27555]
+/home/iwe2/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease() [0x402074]
+
+[END_BACKTRACE]
+
+[FILE]: src/utility/options/OptionCollection.cc
+[LINE]: 536
+[START_MESSAGE]
+Option file open failed for: 'input/flags.options'
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
