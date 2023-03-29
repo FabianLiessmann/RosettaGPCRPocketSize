@@ -1,0 +1,6 @@
+biopython==1.78
+jupyter==1.0.0
+matplotlib==3.5.3
+numpy==1.21.5
+pandas==1.3.5
+scipy==1.7.3
