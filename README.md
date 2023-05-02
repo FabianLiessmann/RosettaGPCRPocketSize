@@ -4,8 +4,10 @@ Abstract: G protein-coupled receptors (GPCRs) are the largest class of drug targ
 
 The here published repository of RosettaGPCRPocketSize is used for constraint file generation to build optimized pocket representation in inactive class A GPCRs
  
-Associated info for Improving the modeling of extracellular ligand binding pockets in RosettaGPCR for conformational selection 
-  https://www.biorxiv.org ?
+Associated info for the paper: Improving the modeling of extracellular ligand binding pockets in RosettaGPCR for conformational selection 
+Published: 24 April 2023
+DOI: https://doi.org/10.3390/ijms24097788
+  https://www.mdpi.com/1422-0067/24/9/7788
 
 If using any of the protocol, scripts or ideas please cite the article above. Thanks and happy modeling!!!
 
